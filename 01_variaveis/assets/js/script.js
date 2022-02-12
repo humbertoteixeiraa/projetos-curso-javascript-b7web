@@ -1,12 +1,17 @@
-var x = 10;
-var y = 15;
-var total = x+y;
+//VAR é uma variável de escopo global.
+var nome = "Humberto";
 
-window.alert(total);
+console.log(window.nome);
 
 
-var a = "Humberto";
-var b = "Teixeira";
-var total = a+" "+b;
+//LET é uma variável de escopo específico e que não pode ser redefinida.
+let name = "Humberto";
 
-window.alert(total);
+console.log(window.name);
+
+
+//CONST é uma variável de valor constante que não pode ter seu valor alterado.
+const idade = 10;
+idade = 11;
+
+console.log(idade);
