@@ -1,0 +1,45 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: arial;
+}
+
+header {
+    background-color: rgb(226, 223, 43);
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#exemplo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-left: 20px;
+}
+
+/* Classe a ser inserida pela função em Javascript */
+.verde {
+    background-color: #00ff00;
+}
+
+/* Classe a ser inserida pela função em Javascript */
+.vermelho {
+    background-color: #ff0000;
+}
+
+/* Classe a ser inserida pela função em Javascript */
+.azul {
+    background-color: #0000ff;
+}
