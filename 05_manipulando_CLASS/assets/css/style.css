@@ -15,12 +15,22 @@ header {
     padding-top: 2%;
 }
 
+.section_1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
 #exemplo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 20px;
     border: 1px solid #ccc;
 }
