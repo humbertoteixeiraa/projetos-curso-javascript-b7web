@@ -20,11 +20,6 @@ header {
     justify-content: space-around;
 }
 
-.section_2 {
-    display: flex;
-    justify-content: space-around;
-}
-
 .buttons {
     display: flex;
     align-items: center;
@@ -57,4 +52,9 @@ button {
 /* Classe a ser inserida pela função em Javascript */
 .azul {
     background-color: #0000ff;
+}
+
+/* Classe a ser inserida pela função em Javascript */
+.preto {
+    background-color: #000;
 }
