@@ -1,29 +1,11 @@
-//Alterando o texto com uma FUNÇÃO em javascript utilizando PARÂMETRO
-function alterar(titulo) {
-    document.getElementById('titulo').innerHTML = titulo;
-    document.getElementById('campo').value = titulo;
+function trocarImagem(filename, animalname) {
+    //Usando o QUERYSELECTOR para "setar" atributos.
+    document.querySelector('.imagem').setAttribute('src', 'assets/images/'+filename);
+    document.querySelector('.imagem').setAttribute('data-animal', animalname)
 }
 
-alterar("Alterando o texto usando PARÂMETRO!");
-
-
-//Teste de uma FUNÇÃO em javascript utilizando a passagem de dois PARÂMETROS
-function somar(x, y) {
-    let total = x + y;
-
-    document.getElementById("campo2").value = total;
+function pegarAnimal() {
+    //Usando o QUERYSELECTOR para pegar atributos.
+    let animal = document.querySelector('.imagem').getAttribute('data-animal');
+    alert("O animal é: "+animal);
 }
-
-somar(10, 5);
-
-
-//Teste de uma FUNÇÃO em javascript utilizando a passagem de dois PARÂMETROS e armazenando o resultado no RETURN.
-function somar(x, y) {
-    let total = x + y;
-
-    return total;
-}
-
-var resultado = somar(20, 25);
-
-document.getElementById('campo3').value = resultado;

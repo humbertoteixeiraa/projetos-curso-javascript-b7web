@@ -22,15 +22,6 @@ header {
     align-items: center;
 }
 
-.test2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.imagem {
+    height: 300px;
 }
-
-.test3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
