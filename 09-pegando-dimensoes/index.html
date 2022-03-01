@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style_responsiveness.css">  
+    </head>
+
+    <body>
+        <header>
+            <div class="title">MANIPULANDO ATRIBUTOS</div>
+        </header>
+
+        <br>
+
+        <section>
+            <h3>1) Testando a alteração de um ATRIBUTO com JAVASCRIPT:</h3>
+            <div class="test1">
+                <div buttons1>
+                    <button onclick="trocarImagem('cachorro.jpg', 'Cachorro')">Cachorro</button>
+                    <button onclick="trocarImagem('gato.jpg', 'Gato')">Gato</button>
+                </div>
+                <br>
+                <img src="assets/images/cachorro.jpg" data-animal="Cachorro" class="imagem">
+                <br><br>
+                <div buttons2>
+                    <button onclick="pegarAnimal()">Qual é o animal?</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <hr>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

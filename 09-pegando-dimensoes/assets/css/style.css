@@ -1,0 +1,27 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: arial;
+}
+
+header {
+    background-image: linear-gradient(to right, #fff, rgb(255, 166, 0), #fff);
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.test1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem {
+    height: 300px;
+}
