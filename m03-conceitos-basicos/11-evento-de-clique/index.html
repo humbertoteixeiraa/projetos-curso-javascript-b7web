@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style_responsiveness.css">  
+    </head>
+
+    <body>
+        <header>
+            <div class="title">DISTÂNCIAS e SCROLL SUAVE</div>
+        </header>
+
+        <br>
+
+        <section>
+            <h3>1 - Pegando a posição do SCROLL em um elemento específico:</h3>
+            <div class="test">
+                <div class="texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nisi optio veniam praesentium, magnam, id rerum aliquam eveniet, eius repellendus officia ab est nam eum excepturi harum. Harum ex atque, laboriosam quo officiis ratione. Illum nihil expedita harum illo hic error accusantium molestiae sunt odio veniam voluptate, laboriosam incidunt repellat, dolorem, obcaecati quis nemo dignissimos nulla? Provident sint vel architecto ex amet, accusamus soluta, rem maxime vitae officiis quibusdam blanditiis animi facilis eum in quos, libero fuga id atque ullam saepe repellat unde veniam itaque? Dolores temporibus veritatis distinctio id ea veniam aspernatur? Cum, distinctio? Commodi sunt exercitationem corporis consequuntur?
+                </div>
+            </div>
+
+            <h3>No console do navegador:</h3>
+            <div class="test-explanation">
+                <div class="code">
+                    document.querySelector('.texto').scrollTop
+                </div>
+                <div class="explanation">
+                    <br>
+                    A propriedade <strong>.scrollTop</strong> retorna a medida da distância do topo de um elemento para o seu conteúdo superior visível na barra de rolagem.
+                </div>
+                <br><br>
+                <div class="code">
+                    document.querySelector('.texto').scrollLeft
+                </div>
+                <div class="explanation">
+                    <br>
+                    A propriedade <strong>.scrollLeft</strong> retorna a medida da distância da esquerda de um elemento para o seu conteúdo visível na barra de rolagem.
+                </div>
+                <br><br>
+            </div>
+            <hr>
+
+            <h3>2 - Pegando a posição do SCROLL em uma tela:</h3>
+
+            <h3>No console do navegador:</h3>
+            <div class="test-explanation">
+                <div class="code">
+                    window.scrollY
+                </div>
+                <div class="explanation">
+                    <br>
+                    A propriedade <strong>window.scrollY</strong> retorna a medida da distância do topo de uma janela para o seu conteúdo superior visível na barra de rolagem.
+                </div>
+                <br><br>
+                <div class="code">
+                    window.scrollX
+                </div>
+                <div class="explanation">
+                    <br>
+                    A propriedade <strong>window.scrollX</strong> retorna a medida da distância da esquerda de uma janela para o seu conteúdo visível na barra de rolagem.
+                </div>
+                <br><br>
+                
+            </div>
+            <hr>
+
+            <h3>3 - Definindo uma posição especícica para o SCROLL em um elemento:</h3>
+
+            <h3>No console do navegador:</h3>
+            <div class="test-explanation">
+                <div class="code">
+                    document.querySelector('.texto').scrollTo(0,0)
+                </div>
+                <div class="explanation">
+                    <br>
+                    A propriedade <strong>.scrollTo</strong> Realiza a rolagem para um conjunto de coordenadas determinadas em um documento.
+                </div>
+                <br><br>
+            </div>
+            <hr>
+
+            <h3>4 - Definindo uma posição especícica para o SCROLL em uma janela:</h3>
+
+            <h3>No console do navegador:</h3>
+            <div class="test-explanation">
+                <div class="code">
+                    window.scrollTo(0,0)
+                </div>
+                <div class="explanation">
+                    <br>
+                    A propriedade <strong>.scrollTo</strong> Realiza a rolagem para um conjunto de coordenadas determinadas em um documento.
+                </div>
+                <br><br>
+            </div>
+            <hr>
+
+            <h3>5 - Fazendo um SCROLL suave em uma janela:</h3>
+
+            <h3 style="color: red;">OBS.: ver o arquivo script.js</h3>
+            <div onclick="subirTela()" class="scrollbutton"></div>
+            <div class="explanation">
+                <br>
+                Botão de voltar para o topo da página criado usando uma FUNÇÃO javascript.
+            </div>
+
+            <br><br>
+            <hr>
+        </section>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

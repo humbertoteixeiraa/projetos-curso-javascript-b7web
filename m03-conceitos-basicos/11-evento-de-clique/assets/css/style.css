@@ -1,0 +1,59 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: arial;
+}
+
+header {
+    background-image: linear-gradient(to right, #fff, rgb(157, 255, 0), #fff);
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto {
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    background-color: #ccc;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.code {
+    width: fit-content;
+    height: fit-content;
+    background-color: antiquewhite;
+    color: blue;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.explanation {
+    text-align: justify;
+    font-style: italic;
+}
+
+.scrollbutton {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #ff0000;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
