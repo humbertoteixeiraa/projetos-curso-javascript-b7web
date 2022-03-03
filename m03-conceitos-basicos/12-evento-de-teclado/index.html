@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style_responsiveness.css">  
+    </head>
+
+    <body>
+        <header>
+            <div class="title">EVENTO DE CLIQUE e de PASSAGEM DO MOUSE</div>
+        </header>
+
+        <br>
+
+        <section>
+            <div class="test-container">
+                <h3>1 - Mostrando uma mensagem de alerta com a propriedade ONCLICK por meio de uma função JAVASCRIPT:</h3>
+                <div class="test">
+                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
+                    <button onclick="clicou1()">Exibir alerta</button>
+                </div>
+                <br><br>
+            </div>
+
+            <hr>
+
+            <div class="test-container">
+                <h3>2 - Alterando o texto de uma DIV com a propriedade ONCLICK por meio de uma função JAVASCRIPT:</h3>
+                <div class="test">
+                    <h1 id="title-text">Original Text</h1>
+                    <br>
+                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
+                    <button onclick="clicou2()">Trocar texto</button>
+                </div>
+                <br><br>
+            </div>
+
+            <hr>
+
+            <div class="test-container">
+                <h3>3 - Alterando o texto de uma DIV com a propriedade ONCLICK por meio de um SCRIPT no próprio botão:</h3>
+                <div class="test">
+                    <h1 id="title-text2">Original Text 2</h1>
+                    <br>
+                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
+                    <button onclick="document.getElementById('title-text2').innerHTML = 'Changed Text 2'">Trocar texto</button>
+                </div>
+                <br><br>
+            </div>
+
+            <hr>
+
+            <div class="test-container">
+                <h3>4 - Alterando o texto de um BUTTON com a propriedade ONCLICK uilizando a propriedade THIS:</h3>
+                <div class="test">
+                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
+                    <button onclick="this.innerHTML = 'Texto do botão alterado!'">Texto original do botão</button>
+                </div>
+                <br><br>
+            </div>
+
+            <hr>
+
+            <div class="test-container">
+                <h3>5 - Mostrando uma mensagem de alerta com a propriedade ONMOUSEOVER ao passar o mouse por algo:</h3>
+                <div class="test">
+                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
+                    <div class="square" onmouseover="passou()">Passe o Mouse</div>
+                </div>
+                <br><br>
+            </div>
+
+            <hr>
+
+            <div class="test-container">
+                <h3>6 - Mostrando uma mensagem de alerta com a propriedade ONMOUSEOVER ao retirar o mouse de algo:</h3>
+                <div class="test">
+                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
+                    <div class="square" onmouseout="retirou()">Retire o Mouse</div>
+                </div>
+                <br><br>
+            </div>
+
+            <hr>
+
+        </section>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
