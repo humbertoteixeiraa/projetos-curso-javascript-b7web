@@ -1,0 +1,56 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: arial;
+}
+
+header {
+    background-image: linear-gradient(to right, #fff, rgb(157, 255, 0), #fff);
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto {
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    background-color: #ccc;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+#title-text, #title-text2 {
+    width: fit-content;
+    height: fit-content;
+    background-color: antiquewhite;
+    color: blue;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.explanation {
+    text-align: justify;
+    font-style: italic;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 4px solid black;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
