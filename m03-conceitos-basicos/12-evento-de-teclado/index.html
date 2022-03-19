@@ -10,17 +10,18 @@
 
     <body>
         <header>
-            <div class="title">EVENTO DE CLIQUE e de PASSAGEM DO MOUSE</div>
+            <div class="title">EVENTO DE TECLADO</div>
         </header>
 
         <br>
 
         <section>
             <div class="test-container">
-                <h3>1 - Mostrando uma mensagem de alerta com a propriedade ONCLICK por meio de uma função JAVASCRIPT:</h3>
+                <h3>1 - Mostrando uma mensagem no console com a propriedade <span style="color: red;">ONKEYUP</span> por meio de uma função JAVASCRIPT:</h3>
                 <div class="test">
-                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
-                    <button onclick="clicou1()">Exibir alerta</button>
+                    <!-- A propriedade ONKEYUP executa uma ação quando uma tecla pressionada é liberada. -->
+                    <input onkeyup="digitou()" type="text">
+
                 </div>
                 <br><br>
             </div>
@@ -28,12 +29,11 @@
             <hr>
 
             <div class="test-container">
-                <h3>2 - Alterando o texto de uma DIV com a propriedade ONCLICK por meio de uma função JAVASCRIPT:</h3>
+                <h3>2 - Mostrando uma mensagem no console com a propriedade <span style="color: red;">ONKEYDOWN</span> por meio de uma função JAVASCRIPT:</h3>
                 <div class="test">
-                    <h1 id="title-text">Original Text</h1>
-                    <br>
-                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
-                    <button onclick="clicou2()">Trocar texto</button>
+                    <!-- A propriedade ONKEYDOWN executa uma ação ao pressionar uma tecla. -->
+                    <input onkeydown="digitou()" type="text">
+
                 </div>
                 <br><br>
             </div>
@@ -41,45 +41,11 @@
             <hr>
 
             <div class="test-container">
-                <h3>3 - Alterando o texto de uma DIV com a propriedade ONCLICK por meio de um SCRIPT no próprio botão:</h3>
+                <h3>3 - Mostrando um evento no console com a propriedade <span style="color: red;">ONKEYUP</span> e o comando <span style="color: red;">EVENT</span> por meio de uma função JAVASCRIPT:</h3>
                 <div class="test">
-                    <h1 id="title-text2">Original Text 2</h1>
-                    <br>
-                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
-                    <button onclick="document.getElementById('title-text2').innerHTML = 'Changed Text 2'">Trocar texto</button>
-                </div>
-                <br><br>
-            </div>
+                    <!-- Passando o comando EVENT como parâmetro para a função "digitou". -->
+                    <input onkeydown="digitou2(event)" id="campo" type="text" name="usuario" value="">
 
-            <hr>
-
-            <div class="test-container">
-                <h3>4 - Alterando o texto de um BUTTON com a propriedade ONCLICK uilizando a propriedade THIS:</h3>
-                <div class="test">
-                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
-                    <button onclick="this.innerHTML = 'Texto do botão alterado!'">Texto original do botão</button>
-                </div>
-                <br><br>
-            </div>
-
-            <hr>
-
-            <div class="test-container">
-                <h3>5 - Mostrando uma mensagem de alerta com a propriedade ONMOUSEOVER ao passar o mouse por algo:</h3>
-                <div class="test">
-                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
-                    <div class="square" onmouseover="passou()">Passe o Mouse</div>
-                </div>
-                <br><br>
-            </div>
-
-            <hr>
-
-            <div class="test-container">
-                <h3>6 - Mostrando uma mensagem de alerta com a propriedade ONMOUSEOVER ao retirar o mouse de algo:</h3>
-                <div class="test">
-                    <!-- A propriedade ONCLICK define uma ação a ser executada ao clicar. -->
-                    <div class="square" onmouseout="retirou()">Retire o Mouse</div>
                 </div>
                 <br><br>
             </div>
