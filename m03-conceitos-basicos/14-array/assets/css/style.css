@@ -1,0 +1,68 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: arial;
+}
+
+header {
+    background-image: linear-gradient(to right, #fff, rgb(255, 196, 0), #fff);
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.about {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#texto {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.botao-azul {
+    background-color: blue;
+    color: white;
+}
+
+.botao-vermelho {
+    background-color: red;
+    color: white;
+}
+.botao-verde {
+    background-color: green;
+    color: white;
+}
+
+.azul {
+    background-color: blue;
+    color: white
+}
+
+.vermelho {
+    background-color: red;
+    color: white
+}
+
+.verde {
+    background-color: green;
+    color: white;
+}
+
+/* ******** */
+
+#telefone {
+    display: none;
+}

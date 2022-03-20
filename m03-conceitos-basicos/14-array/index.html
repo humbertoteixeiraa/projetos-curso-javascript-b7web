@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style_responsiveness.css">  
+    </head>
+
+    <body>
+        <header>
+            <div class="title">MUDANÇA DE ESTILOS</div>
+        </header>
+
+        <br>
+
+        <section>
+            <div class="test-container">
+                <div class="about">1 - Mudando a cor do texto utilizando funções javascript para a  adição ou remoção de classes:</div>
+                <div class="test">
+                    <h1 id="texto">Texto alterado pelos botões ...</h1>
+
+                    <button class="botao-azul" onclick="azul()">Azul</button>
+                    <br>
+                    <button class="botao-vermelho" onclick="vermelho()">Vermelho</button>
+                    <br>
+                    <button class="botao-verde" onclick="verde()">Verde</button>
+                    <br>
+                    <button onclick="limpar()">Remover cores</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="test-container">
+                <div class="about">2 - Mostrando e ocultando DIVs utilizando funções javascript para a modificação da propriedade STYLE</div>
+                <div class="test">
+                    <br>
+                    <div id="telefone">(88) 9.9618-3899</div>
+                    <br>
+
+                    <button id="botaoTelefone" onclick="mostrarTelefone()">Mostrar meu telefone</button>
+                </div>
+            </div>
+
+            <hr>
+            
+        </section>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
