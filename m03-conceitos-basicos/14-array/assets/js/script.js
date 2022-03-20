@@ -1,28 +1,24 @@
-//As funções abaixo selecionam o H1 pelo ID, entram na sua lista de classes, removem todas as classes de cores existentes e adicionam uma classe referente à cor selecionada.
-function azul() {
-    limpar(); //Função aninhada.
-    document.getElementById("texto").classList.add('azul');
-}
+//Criação do ARRAYS com elementos de vários tipos:
+let carros = [
+    'Palio', 
+    'Uno', 
+    'Corolla', 
+    'Ferrari',
+    function teste() {
+        console.log('Testando 1, 2, 3...');
+    }
+];
 
-function vermelho() {
-    limpar(); //Função aninhada.
-    document.getElementById("texto").classList.add('vermelho');
-}
+let ingredientes = [
+    ["uva", "pera", "maça"],
+    ["arroz", "macarrão"]
+]
 
-function verde() {
-    limpar(); //Função aninhada.
-    document.getElementById("texto").classList.add('verde');
-}
+//Mostrando todos os elementos do ARRAY.
+console.log(carros);
+console.log(ingredientes)
 
-//A função abaixo seleciona o H1 pelo ID, entra na sua lista de classes e remove todas as classes de cores existentes.
-function limpar() {
-    document.getElementById("texto").classList.remove('azul');
-    document.getElementById("texto").classList.remove('vermelho');
-    document.getElementById("texto").classList.remove('verde');
-}
-
-//*********
-function mostrarTelefone() {
-    document.getElementById("telefone").style.display = "block";
-    document.getElementById("botaoTelefone").style.display = "none";
-}
+//Mostrando um elemento específico do ARRAY.
+console.log(carros[0]) //Mostrando o primeiro elemento.
+console.log(carros[4] ()) //Mostrando o quinto elemento, que é uma função.
+console.log(ingredientes[1] [0]); //Mostrando o primeiro elemento do segundo array de dentro do array INGREDIENTES.
