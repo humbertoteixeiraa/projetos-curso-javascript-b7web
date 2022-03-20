@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to right, #fff, rgb(157, 255, 0), #fff);
+    background-image: linear-gradient(to right, #fff, rgb(255, 196, 0), #fff);
 }
 
 .title{
@@ -16,41 +16,53 @@ header {
     padding-bottom: 2%;
 }
 
+.about {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .test {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.texto {
-    width: 200px;
-    height: 200px;
-    overflow: auto;
-    background-color: #ccc;
-    padding: 20px;
-    border: 2px solid red;
-}
-
-#title-text, #title-text2 {
-    width: fit-content;
-    height: fit-content;
-    background-color: antiquewhite;
-    color: blue;
-    padding: 10px;
+#texto {
     border: 2px solid black;
+    padding: 10px;
 }
 
-.explanation {
-    text-align: justify;
-    font-style: italic;
+.botao-azul {
+    background-color: blue;
+    color: white;
 }
 
-.square {
-    width: 50px;
-    height: 50px;
+.botao-vermelho {
     background-color: red;
-    border: 4px solid black;
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
+    color: white;
+}
+.botao-verde {
+    background-color: green;
+    color: white;
+}
+
+.azul {
+    background-color: blue;
+    color: white
+}
+
+.vermelho {
+    background-color: red;
+    color: white
+}
+
+.verde {
+    background-color: green;
+    color: white;
+}
+
+/* ******** */
+
+#telefone {
+    display: none;
 }
