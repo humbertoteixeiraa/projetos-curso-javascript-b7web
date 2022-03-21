@@ -1,4 +1,4 @@
-//Criação do ARRAYS com elementos de vários tipos:
+//Criação do ARRAY com elementos de vários tipos:
 let carros = [
     'Palio', 
     'Uno', 
@@ -9,16 +9,41 @@ let carros = [
     }
 ];
 
-let ingredientes = [
-    ["uva", "pera", "maça"],
-    ["arroz", "macarrão"]
+//Criação de OBJETO com propriedade de vários tipos:
+let carro = {
+    nome: 'Fiat',
+    modelo: 'Uno de Firma',
+    peso: '800kg',
+    ligado: false,
+    ligar: function() {
+        this.ligado = true;
+        console.log("Ligando o " + this.modelo);
+        console.log("VRUM! ... VRUM! ...");
+    },
+    acelerar: function() {
+        if (this.ligado == true) {
+            console.log("VRUUUUUUUUUUUUUUUUUUUUUUUUUM ... PÁ PÁ PÁ...")
+        } else {
+            console.log("Impossível acelerar. O " + this.nome + " " + this.modelo + " não está ligado!")
+        }
+    }
+};
+
+
+//Acessando os OBJETOS e exibindo no console:
+console.log("Modelo: " + carro.modelo);
+carro.ligar();
+carro.acelerar();
+
+// ***********************************
+
+//Criação de um ARRAY que armazena OBJETOS:
+let carroes = [
+    {nome: 'Fiat', modelo: 'Palio'},
+    {nome: 'Fiat', modelo: 'Uno'},
+    {nome: 'Toyota', modelo: 'Corolla'},
+    {nome: 'Ferrari', modelo: 'Spider'},
 ]
 
-//Mostrando todos os elementos do ARRAY.
-console.log(carros);
-console.log(ingredientes)
-
-//Mostrando um elemento específico do ARRAY.
-console.log(carros[0]) //Mostrando o primeiro elemento.
-console.log(carros[4] ()) //Mostrando o quinto elemento, que é uma função.
-console.log(ingredientes[1] [0]); //Mostrando o primeiro elemento do segundo array de dentro do array INGREDIENTES.
+//Acessando os OBJETOS do ARRAY e exibindo no console:
+console.log(carroes[2].nome); //Acessou o NOME do terceiro OBJETO do ARRAY.
