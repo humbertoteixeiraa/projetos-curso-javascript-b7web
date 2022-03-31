@@ -2,6 +2,7 @@ body {
     margin: 10px;
     padding: 0;
     font-family: arial;
+    background:#EEE;
 }
 
 header {
@@ -11,7 +12,7 @@ header {
 .title{
     font-weight: bolder;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -36,4 +37,42 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/**************/
+
+aside {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999;
+    display:flex;
+}
+#menu-opener {
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    margin-top:10px;
+    margin-right:10px;
+}
+#menu-area {
+    width:200px;
+    height:100vh;
+    background:#ccc;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all ease .5s;
+}
+#menu-area ul, #menu-area li {
+    padding:0;
+    list-style:none;
+}
+#menu-area li {
+    display:block;
+    padding:10px;
+    color:#555;
+    cursor:pointer;
+}
+#menu-area li:hover {
+    background:#DDD;
 }
